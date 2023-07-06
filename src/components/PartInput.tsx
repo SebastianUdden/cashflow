@@ -1,22 +1,17 @@
-import React from "react";
 import styled from "styled-components";
 
 export interface PartInputProps {
   label?: string;
   type?: string;
   value: string | number;
-  onChange: Function;
+  onChange: any;
 }
 
 const PartInput = ({ label, type, value, onChange }: PartInputProps) => {
   return (
     <Wrapper>
       {label && <Label>{label}</Label>}
-      <Input
-        type={type}
-        value={value.toString()}
-        onChange={(e) => onChange(e)}
-      />
+      <Input type={type} value={value.toString()} onChange={onChange} />
     </Wrapper>
   );
 };

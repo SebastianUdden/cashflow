@@ -1,17 +1,16 @@
-import React from "react";
 import styled from "styled-components";
 
 interface Props {
   label: string;
   value: string;
-  onChange: Function;
+  onChange: any;
 }
 
 const TitleField = ({ label, value, onChange }: Props) => {
   return (
     <Wrapper>
       <Label>{label}</Label>
-      <Input value={value} onChange={(e) => onChange(e.target.value)} />
+      <Input value={value} onChange={(e: any) => onChange(e.target.value)} />
     </Wrapper>
   );
 };
