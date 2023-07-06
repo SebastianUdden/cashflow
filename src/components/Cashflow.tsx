@@ -199,7 +199,7 @@ const Cashflow = () => {
           <Image src={cashflowIcon} />
           <Strong>RAT RACE</Strong>
         </MenuTitle>
-        <button onClick={prePopulate}>Prepopulate</button>
+        <PrePopulate onClick={prePopulate}>Prepopulate</PrePopulate>
         <Subtitle>
           <Strong>Phase 1</Strong>
           <Desktop>
@@ -306,6 +306,12 @@ const Image = styled.img`
 const MenuTitle = styled.div`
   display: flex;
   align-items: center;
+`;
+const PrePopulate = styled.button`
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 24px;
 `;
 
 export default Cashflow;
